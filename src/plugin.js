@@ -1,7 +1,7 @@
-import Clock from './Clock.vue';
+import SweetAlert from './SweetAlert.vue';
 
 module.exports = {
   install: function (Vue, options) {
-    Vue.component('vue-clock', Clock);
+    Vue.component('sweet-alert', SweetAlert);
   }
 };

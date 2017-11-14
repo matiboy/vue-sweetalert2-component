@@ -25,7 +25,7 @@ var config = {
     ]
   },
   externals: {
-    moment: 'moment'
+    sweetalert2: 'sweetalert2'
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin( {
@@ -44,17 +44,17 @@ module.exports = [
   merge(config, {
     entry: path.resolve(__dirname + '/src/plugin.js'),
     output: {
-      filename: 'vue-clock.min.js',
+      filename: 'vue-sweetalert2-component.min.js',
       libraryTarget: 'window',
-      library: 'VueClock',
+      library: 'VueSweetAlert2Component',
     }
   }),
   merge(config, {
-    entry: path.resolve(__dirname + '/src/Clock.vue'),
+    entry: path.resolve(__dirname + '/src/SweetAlert.vue'),
     output: {
-      filename: 'vue-clock.js',
+      filename: 'vue-sweetalert2-component.js',
       libraryTarget: 'umd',
-      library: 'vue-clock',
+      library: 'vue-sweetalert2-component',
       umdNamedDefine: true
     }
   })

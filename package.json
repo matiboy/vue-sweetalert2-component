@@ -1,19 +1,20 @@
 {
-  "name": "vue-clock-simple",
-  "version": "1.0.4",
-  "description": "A Vue.js component that displays a clock",
-  "main": "dist/vue-clock.js",
+  "name": "vue-sweetalert2-component",
+  "version": "1.0.0",
+  "description": "A Vue.js component wrapping SweetAlert2",
+  "main": "dist/vue-sweetalert2-component.js",
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./webpack.config.js"
   },
-  "author": "Anthony Gore",
+  "author": "Matiboy",
   "license": "MIT",
   "dependencies": {
-    "moment": "^2.18.1"
+    "css-loader": "^0.28.7",
+    "sweetalert2": "^6.11.5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anthonygore/vue-clock-simple"
+    "url": "git+https://github.com/matiboy/vue-sweetalert2-component"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
